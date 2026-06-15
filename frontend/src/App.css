@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #060d1a;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Spinner for AI loading */
+.spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #1e293b;
+  border-top-color: #6366f1;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.spin-icon {
+  display: inline-block;
+  animation: spin 0.7s linear infinite;
+}
+
+/* React Flow overrides */
+.react-flow__controls-button {
+  background: #0f172a !important;
+  border-color: #1e293b !important;
+  color: #94a3b8 !important;
+}
+
+.react-flow__controls-button:hover {
+  background: #1e293b !important;
+}
+
+.react-flow__attribution {
+  background: transparent !important;
+  color: #1e293b !important;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b1120;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+input::placeholder {
+  color: #334155;
+}
+
+input:focus {
+  border-color: #6366f1 !important;
+}
